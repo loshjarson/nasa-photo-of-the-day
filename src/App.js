@@ -18,7 +18,8 @@ function App() {
       console.log(data)
       setPictureDate(data.date);
       setPictureUrl(data.hdurl);
-      setExplanation(data.explanation)
+      setExplanation(data.explanation);
+      setPictureTitle(data.title);
     })
     .catch(err => console.log('Error gatting picture: ', err))
   }
@@ -29,7 +30,7 @@ function App() {
       console.log(data)
       setPictureDate(data.date);
       setPictureUrl(data.hdurl);
-      setExplanation(data.explanation)
+      setExplanation(data.explanation);
       setPictureTitle(data.title);
     })
     .catch(err => console.log('Error gatting picture: ', err))
