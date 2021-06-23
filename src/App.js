@@ -38,18 +38,14 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Nasa</h1>
-      <p>Photo of the Day</p>
+      <div className='title'>
+        <h1>Nasa Photo of the Day</h1>
+      </div>
       <div className='container'>
         <Picture picture={pictureUrl}/>
         <Description title={pictureTitle} date={pictureDate} explanation={explanation}/>
       </div>
       <Date getPic={getPic}/>
-      
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun <span role="img" aria-label='go!'>🚀</span>!
-      </p>
     </div>
   );
 }

@@ -1,0 +1,25 @@
+.description {
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 30%;
+    background-color: rgb(250, 242, 224);
+    padding: 2rem;
+}
+
+.description h2 {
+    text-decoration: underline;
+}
+
+.description-container {
+    float: left;
+    display: flex;
+    flex-direction: row;
+}
+
+.line {
+    margin-right: 1rem;   
+}
+
+.description p p {
+    margin: 0;
+}

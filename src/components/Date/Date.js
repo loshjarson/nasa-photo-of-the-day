@@ -1,4 +1,5 @@
 import React, {useRef} from 'react';
+import './Date.css'
 
 const Date = props => {
     const {getPic} = props;

@@ -6,8 +6,14 @@ const Description = props => {
     return(
         <div className='description'>
             <h2>{title}</h2>
-            <p>Date: {date}</p>
-            <p>Explanation: {explanation}</p>
+            <div className='description-container'>
+                <p className='line'>Date:</p>
+                <p>{date}</p>
+            </div>
+            <div className='description-container'>
+                <p className='line'>Explanation:</p>
+                <p>{explanation}</p>
+            </div>
         </div>
     );
 };

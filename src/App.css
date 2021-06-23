@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
 .App-logo {
@@ -35,4 +38,19 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.container {
+  align-self: center;
+  width: 75%;
+  height: min-content;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+}
+
+.title {
+  color: azure;
+
 }
