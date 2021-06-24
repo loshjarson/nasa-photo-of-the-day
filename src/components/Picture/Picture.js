@@ -1,12 +1,22 @@
 import React from "react";
-import './Picture.css';
+import styled from "styled-components"
 
 const Picture = props => {
     const {picture} = props;
+    const Pic = styled.div`
+        width: 60%;
+        height: 100%;
+    `
+    const StyledImg = styled.img`
+        max-height: 100%;
+        max-width: 100%;
+        margin: auto;
+        border: 2px solid white;
+    `
     return(
-        <div className='picture'>
-            <img src={picture} alt=""/>
-        </div>
+        <Pic>
+            <StyledImg src={picture} alt=""/>
+        </Pic>
     );
 };
 

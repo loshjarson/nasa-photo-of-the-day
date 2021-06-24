@@ -1,5 +1,5 @@
 import React, {useRef} from 'react';
-import './Date.css'
+import styled from "styled-components";
 
 const Date = props => {
     const {getPic} = props;
@@ -9,14 +9,32 @@ const Date = props => {
         getPic(date.current.value);
         date.current.value = "";
       }
+
+    const DatePicker = styled.form`
+        margin: auto;
+    `
+    const Label = styled.label`
+        display: block;
+        margin: auto;
+    `
+
+    const Input = styled.input`
+        display: block;
+        margin: auto;
+    `
+    const SubmitButton = styled.button`
+        display: block;
+        margin: auto;
+    `
+    // props.value='Get Picture'
     return(
-        <form className='date-picker' onSubmit={e=>handlesubmit(e)}>
-            <label>
+        <DatePicker onSubmit={e=>handlesubmit(e)}>
+            <Label>
                 Date:
-                <input type='date' ref={date} placeholder=''/>
-            </label>
-            <input type='submit' value='Get Picture'/>
-        </form>
+                <Input type='date' ref={date}/>
+            </Label>
+            <SubmitButton>Get Picture</SubmitButton>
+        </DatePicker>
     )
 }
 
