@@ -15,7 +15,7 @@ const Picture = props => {
     `
     return(
         <Pic>
-            <StyledImg src={picture} alt=""/>
+            <StyledImg src={picture} alt="Nasa Photo of the Day"/>
         </Pic>
     );
 };
